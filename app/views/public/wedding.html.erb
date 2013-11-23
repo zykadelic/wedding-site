@@ -1,9 +1,9 @@
 <article>
 	<h1 style="font-family: cursive;">Bröllopsdagen</h1>
 	<ol>
-		<li>Kl. 15.00 Hålls vigseln på stranden Homrevet, alternativt Böda kyrka vid dåligt väder.</li>
-		<li>Kl. 16.30-17.30 I väntan på brudparets ankomst serveras förfriskningar på restaurang Svea.</li>
-		<li>Kl. 18.00 Serveras sommarbuffé på restaurang Svea.</li>
+		<li>Kl. <%=l configatron.wedding_date, format: '%H.%M' %> Hålls vigseln på stranden Homrevet, alternativt Böda kyrka vid dåligt väder.</li>
+		<li>Kl. <%=l configatron.wedding_date + 90.minutes, format: '%H.%M' %>-<%=l configatron.wedding_date + 150.minutes, format: '%H.%M' %> I väntan på brudparets ankomst serveras förfriskningar på restaurang Svea.</li>
+		<li>Kl. <%=l configatron.wedding_date + 3.hours, format: '%H.%M' %> Serveras sommarbuffé på restaurang Svea.</li>
 	</ol>
 
 	<h2 style="font-family: cursive;">Att tänka på</h2>

@@ -21,3 +21,5 @@ module Wedding
     # config.i18n.default_locale = :de
   end
 end
+
+configatron.wedding_date = '2014-07-15 15:00'.to_datetime
