@@ -114,6 +114,21 @@ nav a:hover {
     padding: 30px 0;
 }
 
+.main a {
+    color: #c2a859;
+    text-decoration: underline;
+}
+
+.main a[target=_blank]:visited {
+    color: #c2bba7;
+}
+
+.main a:hover,
+.main a[target=_blank]:hover {
+    color: #c29e32;
+    text-decoration: none;
+}
+
 .main article h1 {
     font-size: 2em;
 }
