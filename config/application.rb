@@ -23,3 +23,7 @@ module Wedding
 end
 
 configatron.wedding_date = '2014-07-15 15:00'.to_datetime
+configatron.toastmasters = [
+    { name: 'Björn Lyngvik', phone: '070-002 59 14', mail: 'b.lyngvik@hotmail.com' },
+    { name: 'Carina Lyngvik', phone: '070-723 28 40', mail: 'c.lyngvik@hotmail.com' }
+]
