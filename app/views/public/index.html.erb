@@ -1,6 +1,8 @@
 <aside>
-    <img src="/assets/slide/1.jpg" alt="">
-    <p>Image description</p>
+    <% ['Homrevet', 'Hamnen Byxelkrok', 'Bodarna vid hamnen', 'Borgholm', 'Stenar Fagerrör', 'Sand i hand', 'Solnedgång Byxelkrok'].each_with_index do |picture, i| %>
+        <img src="/assets/slides/<%= i %>.jpg" alt="<%= picture %>" width="100%">
+        <p><%= picture %></p>
+    <% end %>
 </aside>
 
 <article class="with-aside">
