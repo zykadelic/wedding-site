@@ -22,17 +22,19 @@
     <div class="header-container">
         <header class="wrapper clearfix">
             <h1 class="title">
-                Nenne &amp; Björne<br>
-                <%=l configatron.wedding_date, format: '%-e %B %Y' %>
+                <%= link_to root_path do %>
+                    Nenne &amp; Björne<br>
+                    <%=l configatron.wedding_date, format: '%-e %B %Y' %>
+                <% end %>
             </h1>
             <nav>
                 <ul>
-                    <li><%= link_to 'Välkomna', root_path %></li>
-                    <li><%= link_to 'Bröllopsdagen', wedding_path %></li>
-                    <li><%= link_to 'Boende', living_path %></li>
-                    <li><%= link_to 'Att ta sig till och runt på Öland', navigation_path %></li>
-                    <li><%= link_to 'Ölandstips', tips_path %></li>
-                    <li><%= link_to 'O.s.a', rsvp_path %></li>
+                    <li><%= link_to 'Välkomna', root_path, class: "#{'active' if current_page? root_path}" %></li>
+                    <li><%= link_to 'Bröllopsdagen', wedding_path, class: "#{'active' if current_page? wedding_path}" %></li>
+                    <li><%= link_to 'Boende', living_path, class: "#{'active' if current_page? living_path}" %></li>
+                    <li><%= link_to 'Att ta sig till och runt på Öland', navigation_path, class: "#{'active' if current_page? navigation_path}" %></li>
+                    <li><%= link_to 'Ölandstips', tips_path, class: "#{'active' if current_page? tips_path}" %></li>
+                    <li><%= link_to 'O.s.a', rsvp_path, class: "#{'active' if current_page? rsvp_path}" %></li>
                 </ul>
             </nav>
         </header>
