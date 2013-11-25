@@ -86,14 +86,6 @@ body {
     text-decoration: inherit;
 }
 
-nav a {
-    padding: 10px 0;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    font-size: 18px;
-}
-
 /* ==============
     MOBILE: Menu
    ============== */
@@ -105,9 +97,14 @@ nav ul {
 
 nav a {
     display: block;
+    padding: 10px 0;
     margin-bottom: 10px;
     background: #f7ecda;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
     color: #7a6951;
+    font-size: 18px;
     font-weight: bold;
     text-decoration: none;
     text-align: center;
