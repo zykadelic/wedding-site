@@ -1,9 +1,18 @@
 <article>
 	<h1>Bröllopsdagen</h1>
 	<ol class="no-type">
-		<li>Kl. <%=l configatron.wedding_date, format: '%H.%M' %> Hålls vigseln på stranden Homrevet, alternativt Böda kyrka vid dåligt väder.</li>
-		<li>Kl. <%=l configatron.wedding_date + 90.minutes, format: '%H.%M' %>-<%=l configatron.wedding_date + 150.minutes, format: '%H.%M' %> I väntan på brudparets ankomst serveras förfriskningar på restaurang Svea.</li>
-		<li>Kl. <%=l configatron.wedding_date + 3.hours, format: '%H.%M' %> Serveras sommarbuffé på restaurang Svea.</li>
+		<li>
+			<%= time_tag configatron.wedding_date, "Kl. #{l configatron.wedding_date, format: '%H.%M'}" %>
+			Hålls vigseln på stranden Homrevet, alternativt Böda kyrka vid dåligt väder.
+		</li>
+		<li>
+			<%= time_tag configatron.wedding_date + 90.minutes, "Kl. #{l configatron.wedding_date + 90.minutes, format: '%H.%M'} - #{l configatron.wedding_date + 150.minutes, format: '%H.%M'}" %>
+			I väntan på brudparets ankomst serveras förfriskningar på restaurang Svea.
+		</li>
+		<li>
+			<%= time_tag configatron.wedding_date + 3.hours, "Kl. #{l configatron.wedding_date + 3.hours, format: '%H.%M'}" %>
+			Serveras sommarbuffé på restaurang Svea.
+		</li>
 	</ol>
 
 	<h2>Att tänka på</h2>

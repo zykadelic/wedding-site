@@ -25,7 +25,7 @@
             <h1 class="title">
                 <%= link_to root_path do %>
                     Nenne &amp; Björne<br>
-                    <%=l configatron.wedding_date, format: '%-e %B %Y' %>
+                    <%= time_tag configatron.wedding_date, l(configatron.wedding_date, format: '%-e %B %Y') %>
                 <% end %>
             </h1>
             <nav>
