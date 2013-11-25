@@ -186,12 +186,6 @@ nav a.active {
     margin-top: 0;
 }
 
-.main article ol.no-type,
-.main article ul.no-type {
-    padding-left: 20px;
-    list-style-type: none;
-}
-
 .main aside {
     padding: 0px 0px 10px;
 }
