@@ -3,6 +3,17 @@
 	list-style-type: none;
 }
 
+.schedule time {
+	padding: 0 8px;
+	background: #f7ecda;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+	color: #7a6951;
+	font-size: 14px;
+	font-weight: 600;
+}
+
 .toastmasters-contact div {
 	float: left;
 	margin: 10px 40px 20px 0;
