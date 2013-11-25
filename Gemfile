@@ -40,3 +40,12 @@ end
 
 # Store constants in configatron
 gem 'configatron', '~> 2.13.0'
+
+# Required gems for running on Heroku
+group :production do
+	gem 'rails_12factor'
+	gem 'pg'
+end
+
+# Specify Ruby version
+ruby '2.0.0'
