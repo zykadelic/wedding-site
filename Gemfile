@@ -41,10 +41,11 @@ end
 # Store constants in configatron
 gem 'configatron', '~> 2.13.0'
 
-# Required gems for running on Heroku
+# Gems for running on Heroku
 group :production do
 	gem 'rails_12factor'
 	gem 'pg'
+	gem 'newrelic_rpm'
 end
 
 # Specify Ruby version
