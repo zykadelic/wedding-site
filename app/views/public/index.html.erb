@@ -1,8 +1,12 @@
 <aside>
-    <% ['Homrevet', 'Hamnen Byxelkrok', 'Bodarna vid hamnen', 'Borgholm', 'Stenar Fagerrör', 'Sand i hand', 'Solnedgång Byxelkrok'].each_with_index do |picture, i| %>
-        <img src="/assets/slides/<%= i %>.jpg" alt="<%= picture %>" width="100%">
-        <p><%= picture %></p>
-    <% end %>
+    <ul id="slides">
+        <% ['Homrevet', 'Hamnen Byxelkrok', 'Bodarna vid hamnen', 'Borgholm', 'Stenar Fagerrör', 'Sand i hand', 'Solnedgång Byxelkrok'].each_with_index do |picture, i| %>
+            <li class="<%= 'active' if i.zero? %>">
+                <img src="/assets/slides/<%= i %>.jpg" alt="<%= picture %>" width="100%">
+                <p class="fancy"><%= picture %></p>
+            </li>
+        <% end %>
+    </ul>
 </aside>
 
 <article class="with-aside">
