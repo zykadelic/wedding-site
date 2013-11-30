@@ -1,14 +1,3 @@
-<aside>
-    <ul id="slides">
-        <% ['Homrevet', 'Hamnen Byxelkrok', 'Bodarna vid hamnen', 'Borgholm', 'Stenar Fagerrör', 'Sand i hand', 'Solnedgång Byxelkrok'].each_with_index do |picture, i| %>
-            <li class="<%= 'active' if i.zero? %>">
-                <img src="/assets/slides/<%= i %>.jpg" alt="<%= picture %>" width="100%">
-                <p class="fancy"><%= picture %></p>
-            </li>
-        <% end %>
-    </ul>
-</aside>
-
 <article class="with-aside">
     <h1>Varmt välkomna till vårt strandbröllop</h1>
     <p>
@@ -25,3 +14,14 @@
     	<span class="fancy">Nenne &amp; Björne</span>
     </p>
 </article>
+
+<aside>
+    <ul id="slides">
+        <% ['Homrevet', 'Hamnen Byxelkrok', 'Bodarna vid hamnen', 'Borgholm', 'Stenar Fagerrör', 'Sand i hand', 'Solnedgång Byxelkrok'].each_with_index do |picture, i| %>
+            <li class="<%= 'active' if i.zero? %>">
+                <img src="/assets/slides/<%= i %>.jpg" alt="<%= picture %>" width="100%">
+                <p class="fancy"><%= picture %></p>
+            </li>
+        <% end %>
+    </ul>
+</aside>

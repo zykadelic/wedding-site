@@ -180,6 +180,10 @@ nav a.active {
     font-size: 28px;
 }
 
+.main article.with-aside {
+    margin-bottom: 30px;
+}
+
 .main article .list-title {
     margin-bottom: 0;
 }
@@ -311,7 +315,7 @@ nav a.active {
    ============ */
 
     .main article.with-aside {
-        float: left;
+        float: right;
         width: 57%;
     }
 
