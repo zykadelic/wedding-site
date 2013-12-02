@@ -1,14 +1,26 @@
 class PublicController < ApplicationController
 
-	def index;end
+	def index
+		@title = 'Varmt välkomna till vårt strandbröllop'
+	end
 
-	def wedding;end
+	def wedding
+		@title = 'Bröllopsdagen'
+	end
 
-	def living;end
+	def living
+		@title = 'Boende'
+	end
 
-	def navigation;end
+	def navigation
+		@title = 'Att ta sig till, samt runt på Öland'
+	end
 
-	def tips;end
+	def tips
+		@title = 'Ölandstips'
+	end
 
-	def rsvp;end
+	def rsvp
+		@title = 'O.s.a'
+	end
 end
