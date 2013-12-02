@@ -14,9 +14,12 @@ function animateSlide(){
 		current.add(next).css('display', 'block');
 		current.removeClass('active');
 
-		setTimeout(function(){ next.addClass('active') }, 1);
-		setTimeout(function(){ current.css('display', 'none') }, 1000);
-
-		animateSlide();
+		setTimeout(function(){
+			next.addClass('active');
+			setTimeout(function(){
+				current.css('display', 'none');
+				animateSlide();
+			}, 1000);
+		}, 1);
 	}, 6000);
 }
