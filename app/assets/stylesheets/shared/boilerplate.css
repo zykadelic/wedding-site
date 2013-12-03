@@ -251,6 +251,7 @@ nav a.active {
         padding-left: 2%;
         margin-right: 3%;
     }
+    .lt-ie9 nav a { margin-right: 2%; }
 
     nav li:last-child a {
         margin-right: 0;
@@ -308,6 +309,7 @@ nav a.active {
         margin-right: 2%;
         margin-bottom: 15px;
     }
+    .lt-ie9 nav a { margin-right: 1%; }
 
     nav li:last-child a {
         margin-right: 0;
