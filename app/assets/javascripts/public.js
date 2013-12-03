@@ -1,9 +1,11 @@
 $(function(){
-	if(!$('html').hasClass('csstransitions')){
-		$('#slides li.active').css('opacity', 1);
-		$('#slides li:not(.active)').css('opacity', 0);
+	if($('#slides').length){
+		if(!$('html').hasClass('csstransitions')){
+			$('#slides li.active').css('opacity', 1);
+			$('#slides li:not(.active)').css('opacity', 0);
+		}
+		animateSlide(1000);
 	}
-	animateSlide(1000);
 });
 
 function animateSlide(animationSpeed){
