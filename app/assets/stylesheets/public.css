@@ -9,7 +9,9 @@
 #slides li {
 	position: absolute;
 	top: 0;
-	display: none;
+	z-index: 1;
+	display: block;
+	height: 0;
 	opacity: 0;
 	-webkit-transition: opacity 1s;
 	-moz-transition: opacity 1s;
@@ -19,7 +21,8 @@
 }
 
 #slides li.active {
-	display: block;
+	z-index: 2;
+	height: auto;
 	opacity: 1;
 }
 

@@ -10,16 +10,8 @@ function animateSlide(){
 		if(!next.length){
 			next = $('#slides li:first');
 		}
-
-		current.add(next).css('display', 'block');
 		current.removeClass('active');
-
-		setTimeout(function(){
-			next.addClass('active');
-			setTimeout(function(){
-				current.css('display', 'none');
-				animateSlide();
-			}, 1000);
-		}, 1);
+		next.addClass('active');
+		animateSlide();
 	}, 6000);
 }
