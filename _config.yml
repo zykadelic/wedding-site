@@ -1,0 +1,16 @@
+# Site settings
+title: Ölandsbröllop.se
+email: andreas@enigma.cc
+author: Andreas Fransson
+url: http://ölandsbröllop.se
+
+# Configatron
+url_without_protocol: ölandsbröllop.se
+ga_tracking_code: UA-31649925-3
+time_tag_format: '%FT%T%Z'
+
+wedding_date: 2014-07-15 15:00
+
+# Build settings
+permalink: pretty
+timezone: Europe/Stockholm

@@ -1,0 +1,81 @@
+---
+---
+
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+	<meta name="description" content="{{ site.description }}">
+	<meta name="keywords" content="{{ site.keywords }}">
+	<meta name="author" content="{{ site.author }}">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" type="text/css" href="/assets/stylesheets/application.css">
+	<script type="text/javascript" src="/assets/javascripts/shared/modernizr-respond-1.1.0.min.js"></script>
+</head>
+<body>
+	{% comment %}time_ago_in_words '2009-03-19'.to_date{% endcomment %}
+	<!--[if lt IE 9]>
+		<p class="chromeframe">
+			<strong>Viktig information:</strong><br>
+			Du använder en webbläsare som är <strong><a href="http://en.wikipedia.org/wiki/Internet_Explorer_8" target="_blank" title="Internet Explorer 8 - Wikipedia.org">mer än 5 år gammal</a></strong>. På Internet är det <strong>väldigt länge</strong>! Vänligen <a href="http://browsehappy.com/" target="_blank">uppdatera din webbläsare</a> eller <a href="http://www.google.com/chromeframe/?redirect=true" target="_blank">aktivera Google Chrome Frame</a> för att förbättra din upplevelse och få se snyggare webbsidor.
+		</p>
+	<![endif]-->
+
+	<div class="header-container">
+		<header class="wrapper clearfix">
+			<h1 class="title">
+				<a href="/">
+					Nenne &amp; Björne<br>
+					<time datetime="{{ site.wedding_date | date: site.time_tag_format }}">
+						{{ site.wedding_date | date: '%-d' }}
+						{% assign m = site.wedding_date | date: '%-m' %}
+						{% case m %}
+							{% when '1' %}januari
+							{% when '2' %}februari
+							{% when '3' %}mars
+							{% when '4' %}april
+							{% when '5' %}maj
+							{% when '6' %}juni
+							{% when '7' %}juli
+							{% when '8' %}augusti
+							{% when '9' %}september
+							{% when '10' %}oktober
+							{% when '11' %}november
+							{% when '12' %}december
+						{% endcase %}
+						{{ site.wedding_date | date: '%Y' }}
+					</time>
+				</a>
+			</h1>
+			<nav>
+				<ul>
+					{% for nav in site.data.navigation %}
+						<li><a href="{{ nav.url }}" class="{% if page.url == nav.url %}active{% endif %}">{{ nav.text }}</a></li>
+					{% endfor %}
+				</ul>
+			</nav>
+		</header>
+	</div>
+
+	<div class="main-container">
+		<div class="main wrapper clearfix">{{ content }}</div>
+	</div>
+
+	<script type="text/javascript" src="/assets/javascripts/shared/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="/assets/javascripts/shared/plugins.js"></script>
+	<script type="text/javascript" src="/assets/javascripts/application.js"></script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', '{{ site.ga_tracking_code }}', '{{ site.url_without_protocol }}');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>

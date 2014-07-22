@@ -1,0 +1,21 @@
+---
+layout: application
+title: O.s.a
+---
+
+<article>
+	<h1>{{ page.title }}</h1>
+	<p>
+		{% assign 1_month = 30 | times: 24 | times: 60 | times: 60 %}
+		Vänligen o.s.a till våra Toastmasters Björn &amp; Carina senast <time datetime="{{ site.wedding_date | date: '%s' | minus: 1_month | date: site.time_tag_format }}">{{ site.wedding_date | date: '%s' | minus: 1_month | date: '%F' }}</time>.
+	</p>
+	<div class="toastmasters-contact clearfix">
+		{% for toastmaster in site.data.toastmasters %}
+			<div>
+				<span class="fancy">{{ toastmaster.name }}</span><br>
+				{{ toastmaster.phone }}<br>
+				<a href="mailto:{{ toastmaster.mail }}?subject=Ölandsbröllop {{ site.wedding_date | date: '%Y' }}" target="_blank">{{ toastmaster.mail }}</a>
+			</div>
+		{% endfor %}
+	</div>
+</article>

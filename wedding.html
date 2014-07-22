@@ -1,0 +1,41 @@
+---
+layout: application
+title: Bröllopsdagen
+---
+
+<article>
+	<h1>{{ page.title }}</h1>
+	<ol class="schedule">
+		<li>
+			<time datetime="{{ site.wedding_date | date: site.time_tag_format }}">{{ site.wedding_date | date: 'Kl. %H.%M' }}</time>
+			Vigseln hålls på stranden Homrevet, alternativt Böda kyrka vid dåligt väder.
+		</li>
+		<li>
+			{% assign ninety_minutes = 90 | times: 60 %}
+			{% assign 150_minutes = 150 | times: 60 %}
+			<time datetime="{{ site.wedding_date | date: '%s' | plus: ninety_minutes | date: site.time_tag_format }}">{{ site.wedding_date | date: '%s' | plus: ninety_minutes | date: 'Kl. %H.%M' }} - {{ site.wedding_date | date: '%s' | plus: 150_minutes | date: '%H.%M' }}</time>
+			I väntan på brudparets ankomst serveras förfriskningar på restaurang Svea.
+		</li>
+		<li>
+			{% assign 3_hours = 3 | times: 60 | times: 60 %}
+			<time datetime="{{ site.wedding_date | date: '%s' | plus: 3_hours | date: site.time_tag_format }}">{{ site.wedding_date | date: '%s' | plus: 3_hours | date: 'Kl. %H.%M' }}</time>
+			Sommarbuffé serveras på restaurang Svea.
+		</li>
+	</ol>
+
+	<h2>Att tänka på</h2>
+	<p>
+		För er med höga klackar kan det bli aktuellt med ombyte till sandaler eller barfota för promenad till stranden.
+	</p>
+	<p>
+		Efter vigseln går färden till Skäftekärr där middagen och festen äger rum, efter middagen finns det även möjlighet till bar och dans.
+	</p>
+
+	<h2>Toastmaster</h2>
+	<p>
+		Vill ni säga något under middagen får ni gärna kontakta <a href="/rsvp">Toastmasters Björn &amp; Carina Lyngvik</a>.
+	</p>
+	<p>
+		Om ni har plats över i bilen eller vill åka med i någon annans bil, hör av er till <a href="/rsvp">Toastmasters Björn &amp; Carina</a>, så försöker de att samordna transporterna.
+	</p>
+</article>
