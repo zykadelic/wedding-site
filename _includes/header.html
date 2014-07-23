@@ -1,0 +1,35 @@
+<div class="header-container">
+	<header class="wrapper clearfix">
+		<h1 class="title">
+			<a href="/">
+				Nenne &amp; Björne<br>
+				<time datetime="{{ site.wedding_date | date: site.time_tag_format }}">
+					{{ site.wedding_date | date: '%-d' }}
+					{% assign m = site.wedding_date | date: '%-m' %}
+					{% case m %}
+						{% when '1' %}januari
+						{% when '2' %}februari
+						{% when '3' %}mars
+						{% when '4' %}april
+						{% when '5' %}maj
+						{% when '6' %}juni
+						{% when '7' %}juli
+						{% when '8' %}augusti
+						{% when '9' %}september
+						{% when '10' %}oktober
+						{% when '11' %}november
+						{% when '12' %}december
+					{% endcase %}
+					{{ site.wedding_date | date: '%Y' }}
+				</time>
+			</a>
+		</h1>
+		<nav>
+			<ul>
+				{% for nav in include.navigation %}
+					<li><a href="{{ nav.url }}" class="{% if page.url == nav.url %}active{% endif %}">{{ nav.text }}</a></li>
+				{% endfor %}
+			</ul>
+		</nav>
+	</header>
+</div>

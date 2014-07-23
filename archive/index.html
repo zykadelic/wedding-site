@@ -1,0 +1,33 @@
+---
+layout: archive
+title: Varmt välkomna till vårt strandbröllop
+---
+
+<article class="with-aside">
+	<h1>{{ page.title }}</h1>
+	<p>
+		Vi har den stora äran att bjuda in er till vårt bröllop på Norra Öland. Vigseln kommer att äga rum <time datetime="{{ site.wedding_date | date: site.time_tag_format }}">{{ site.wedding_date | date: '%F kl. %H.%M' }}</time> på stranden Homrevet. Vid dåligt väder är Bödakyrka inbokad.
+	</p>
+	<p>
+		Därefter intar vi en sommarbuffé på restaurang Svea (f.d jägmästarbostaden) i Skäftekärr.
+	</p>
+	<p>
+		Klädsel kavaj.
+	</p>
+	<p>
+		Varmt välkomna<br>
+		<span class="fancy">Nenne &amp; Björne</span>
+	</p>
+</article>
+
+<aside>
+	<ul id="slides">
+		{% assign slides = 'Homrevet,Hamnen Byxelkrok,Bodarna vid hamnen,Borgholm,Stenar Fagerrör,Sand i hand,Solnedgång Byxelkrok' | split: ',' %}
+		{% for picture in slides %}
+			<li class="{% if forloop.first %}active{% endif %}">
+				<img src="/assets/images/slides/{{ forloop.index0 }}.jpg" alt="{{ picture }}" width="100%">
+				<p class="fancy">{{ picture }}</p>
+			</li>
+		{% endfor %}
+	</ul>
+</aside>

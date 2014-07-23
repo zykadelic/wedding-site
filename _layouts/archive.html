@@ -4,15 +4,15 @@
 <!DOCTYPE html>
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-{% include head.html layout='application' %}
+{% include head.html layout='archive' %}
 <body>
 	{% include browser_update.html %}
-	{% include header.html navigation=site.data.navigation %}
+	{% include header.html navigation=site.data.archive_navigation %}
 
 	<div class="main-container">
 		<div class="main wrapper clearfix">{{ content }}</div>
 	</div>
 
-	{% include javascripts.html layout='application' %}
+	{% include javascripts.html layout='archive' %}
 </body>
 </html>
