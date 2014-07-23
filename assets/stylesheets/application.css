@@ -1,3 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700|Tangerine:700);
 @import url(./shared/normalize.min.css);
 @import url(./shared/boilerplate.css);
+
+.col-3 {
+	float: left;
+	width: 30%;
+	margin-right: 3%;
+}
+
+#memorabilia .col-3 { min-width: 300px; }
