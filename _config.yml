@@ -6,6 +6,7 @@ url: http://ölandsbröllop.se
 
 # Configatron
 url_without_protocol: ölandsbröllop.se
+fb_app_id: '1436869663260887'
 ga_tracking_code: UA-31649925-3
 time_tag_format: '%FT%T%Z'
 

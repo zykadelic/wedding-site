@@ -1,12 +1,8 @@
-- text: Välkomna
-  url: /
 - text: Bröllopsdagen
-  url: /wedding/
-- text: Boende
-  url: /living/
-- text: Ta dig till och runt på Öland
-  url: /navigation/
-- text: Ölandstips
-  url: /tips/
-- text: O.s.a
-  url: /rsvp/
+  url: /
+# - text: Andra bilder
+#   url: /other-pictures/
+- text: Memorabilia
+  url: /memorabilia/
+- text: Besök den gamla sidan
+  url: /archive/
