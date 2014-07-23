@@ -8,4 +8,7 @@
 	margin-right: 3%;
 }
 
-#memorabilia .col-3 { min-width: 300px; }
+#memorabilia .col-3 {
+	min-width: 300px;
+	min-height: 163px;
+}
