@@ -1,7 +1,7 @@
 - text: Bröllopsdagen
   url: /
-- text: Andra bilder
-  url: /other-pictures/
+# - text: Andra bilder
+#   url: /other-pictures/
 - text: Övrig memorabilia
   url: /memorabilia/
 - text: Besök den gamla sidan
