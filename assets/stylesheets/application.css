@@ -4,6 +4,16 @@
 
 #wedding-day .section { margin-bottom: 32px; }
 #wedding-day .section h1 { margin-bottom: 0; }
+#wedding-day .section .pictures {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#wedding-day .section .pictures .picture {
+	display: block;
+	float: left;
+	margin: 0 1px 1px 0;
+}
 
 .col-3 {
 	float: left;
