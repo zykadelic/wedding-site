@@ -2,10 +2,10 @@
 title: Ölandsbröllop.se
 email: andreas@enigma.cc
 author: Andreas Fransson
-url: http://ölandsbröllop.se
+url: http://www.ölandsbröllop.se
 
 # Configatron
-url_without_protocol: ölandsbröllop.se
+url_without_protocol: www.ölandsbröllop.se
 fb_app_id: '1436869663260887'
 ga_tracking_code: UA-31649925-3
 time_tag_format: '%FT%T%Z'
