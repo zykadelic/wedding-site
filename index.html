@@ -14,6 +14,13 @@ title: Bröllopsbilder
 		<p>
 			Skicka din bild med text till <a href="mailto:{{ site.email }}?subject=Bröllopsbilder">{{ site.email }}</a> så dyker de upp här inom kort!
 		</p>
+		<ul class="pictures clearfix">
+			{% for picture in site.data.others_pictures %}
+				<li class="picture">
+					<img src="/assets/images/others-pictures/{{ picture.file }}" alt="{{ picture.description }}" title="{{ picture.description }}" width="200">
+				</li>
+			{% endfor %}
+		</ul>
 	</section>
 
 	<div class="fb-comments" data-href="{{ page.url | prepend: site.url }}" data-width="100%"></div>
