@@ -16,7 +16,7 @@ title: Bröllopsbilder
 		</p>
 		<ul class="pictures clearfix">
 			{% for picture in site.data.others_pictures %}
-				<li class="picture">
+				<li class="picture lightbox-trigger" data-lightbox-key="picture" data-lightbox-data='{"src": "/assets/images/others-pictures/{{ picture.file }}", "uploaded_by": "{{ picture.uploaded_by }}", "description": "{{ picture.description }}"}'>
 					<img src="/assets/images/others-pictures/{{ picture.file }}" alt="{{ picture.description }}" title="{{ picture.description }}" width="200">
 				</li>
 			{% endfor %}
@@ -25,3 +25,14 @@ title: Bröllopsbilder
 
 	<div class="fb-comments" data-href="{{ page.url | prepend: site.url }}" data-width="100%"></div>
 </article>
+
+
+<script type="text/html-template" id="picture-lightbox-tmpl">
+	<div class="lightbox-close">X</div>
+	<div class="picture" style="background-image: url(${src});">
+		<div class="info">
+			<h1 class="uploaded-by">Uppladdat av <strong>${uploaded_by}</strong></h1>
+			<p class="description">${description}</p>
+		</div>
+	</div>
+</script>
