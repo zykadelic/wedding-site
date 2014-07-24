@@ -122,4 +122,5 @@
 	height: 0;
 	overflow: hidden;
 }
-#picture-lightbox .picture:hover .info .description { height: auto; }
+#picture-lightbox .picture:hover .info .description,
+#picture-lightbox .picture.touch-hover .info .description { height: auto; }
