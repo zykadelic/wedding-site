@@ -15,10 +15,9 @@ title: Bröllopsbilder
 			Skicka din bild med text till <a href="mailto:{{ site.email }}?subject=Bröllopsbilder">{{ site.email }}</a> så dyker de upp här inom kort!
 		</p>
 		<ul class="pictures clearfix">
+			{% assign path = '/assets/images/others-pictures/' %}
 			{% for picture in site.data.others_pictures %}
-				<li class="picture lightbox-trigger" data-lightbox-key="picture" data-lightbox-data='{"src": "/assets/images/others-pictures/{{ picture.file }}", "uploaded_by": "{{ picture.uploaded_by }}", "description": "{{ picture.description }}"}'>
-					<img src="/assets/images/others-pictures/{{ picture.file }}" alt="{{ picture.description }}" title="{{ picture.description }}" width="200">
-				</li>
+				<li class="picture lightbox-trigger" title="{{ picture.description }}" data-lightbox-key="picture" data-lightbox-data='{"src": "{{ path }}{{ picture.file }}", "uploaded_by": "{{ picture.uploaded_by }}", "description": "{{ picture.description }}"}' style="background-image: url({{ path }}{{ picture.file }});">{{ picture.file }}</li>
 			{% endfor %}
 		</ul>
 	</section>

@@ -13,7 +13,15 @@
 #wedding-day .section .pictures .picture {
 	display: block;
 	float: left;
+	width: 200px;
+	height: 170px;
 	margin: 0 1px 1px 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: no-repeat center;
+	background-size: cover;
+	font-size: 0;
 }
 
 .col-3 {
